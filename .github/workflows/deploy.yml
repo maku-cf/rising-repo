@@ -38,6 +38,7 @@ jobs:
         env:
           MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
           GOOGLE_SERVICE_KEY: ${{ secrets.GOOGLE_SERVICE_KEY }}
+          NODE_OPTIONS: --dns-result-order=ipv4first
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
